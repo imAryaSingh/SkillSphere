@@ -6,10 +6,10 @@ const Register = () => {
     name: '',
     location: '',
     photo: null,
-    skills_offered: '',
-    skills_wanted: '',
+    skillsOffered: '',
+    skillsWanted: '',
     availability: '',
-    is_public: true,
+    isPublic: true,
     email: '',
     password: '',
     confirmPassword: '',
@@ -55,10 +55,10 @@ const Register = () => {
     const userData = {
       name: form.name,
       location: form.location,
-      skillsOffered: form.skills_offered,
-      skillsWanted: form.skills_wanted,
+      skillsOffered: form.skillsOffered,
+      skillsWanted: form.skillsWanted,
       availability: form.availability,
-      isPublic: form.is_public,
+      isPublic: form.isPublic,
       email: form.email,
       password: form.password,
       role: form.role
@@ -132,9 +132,9 @@ const Register = () => {
               <label className="text-sm text-gray-600 mb-1">Skills Offered</label>
               <input
                 type="text"
-                name="skills_offered"
+                name="skillsOffered"
                 placeholder="e.g., JavaScript, Cooking"
-                value={form.skills_offered}
+                value={form.skillsOffered}
                 onChange={handleChange}
                 className="border px-4 py-2 rounded-lg"
               />
@@ -145,9 +145,9 @@ const Register = () => {
               <label className="text-sm text-gray-600 mb-1">Skills Wanted</label>
               <input
                 type="text"
-                name="skills_wanted"
+                name="skillsWanted"
                 placeholder="e.g., Design, French"
-                value={form.skills_wanted}
+                value={form.skillsWanted}
                 onChange={handleChange}
                 className="border px-4 py-2 rounded-lg"
               />
@@ -173,8 +173,8 @@ const Register = () => {
             <div className="col-span-full flex items-center gap-2 mt-2">
               <input
                 type="checkbox"
-                name="is_public"
-                checked={form.is_public}
+                name="isPublic"
+                checked={form.isPublic}
                 onChange={handleChange}
                 className="accent-blue-600"
               />
